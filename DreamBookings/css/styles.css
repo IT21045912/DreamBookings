@@ -1,0 +1,342 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppings',sans-serif;
+  text-decoration: none;
+}
+/*Home*/
+body{
+  background-color: rgb(0, 0, 0);
+}
+/*Navigation Bar*/
+.navbar{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 20px 10px;
+  z-index: 100000;
+  background-color: #FFFFFF;
+}
+.navbar a:hover {
+  background-color: rgba(78, 149, 255, 0.46);
+  color: black;
+  padding: 10px 10px 10px 10px;
+  transition: all 0.2s ease;
+}
+.navbar a.active {
+  background-color: rgb(10, 98, 187);
+  color: white;
+  transition:0.8s;
+  animation-duration: 1s;
+}
+.navbar .logo{
+  position: relative;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  font-size: 2em;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+.navbar ul{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar ul li{
+  position: relative;
+  list-style: none;
+}
+.navbar ul li a{
+  position: relative;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  margin: 0 15px;
+  color:black;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: large;
+  transition: 0.6s;
+}
+/*Background Video*/
+
+#homevideo{
+  right:0;
+  bottom: 0;
+  width:100% !important;
+  position:relative;
+  object-fit: cover;
+  height: 80vh;
+}
+/*Things To Do*/
+.imgbox .menuimg:hover{
+  -webkit-filter: blur(2.5px); 
+  filter: blur(2.5px);
+  transition: all 0.5s ease;
+  transform: scale(1.2);
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 0px;
+}
+.imgbox {
+  float: left;
+  width: 33.3%;
+  padding: 70px 70px ;
+  position: relative;
+}
+.imgbox .imgbut{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 40px;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px ;
+  background-color: rgba(0, 0, 0, 0.296);
+  color: aliceblue;
+}
+/*Offer Slide*/
+.offerbut {
+  position: absolute;
+  margin-top: 300px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f4501e8f;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 300px;
+  transition: all 0.5s;
+}
+.offerbut span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.offerbut span:after {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.offerbut:hover span {
+  padding-right: 25px;
+}
+.offerbut:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*Details*/
+.column{
+  float:left;
+  width: 33.33%; 
+}
+.imgfoot:hover{
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+.end::after{
+  content:"";
+  display: table;
+  clear: both;
+}
+/*Footer*/
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+}
+.footer .footer_text{
+  color: rgb(255, 255, 255);
+  font-size: medium;
+  bottom: 0;
+}
+/*Home Page End*/
+/*----------------------------------------------*/
+/*----------------------------------------------*/
+/*----------------------------------------------*/
+/*----------------------------------------------*/
+/*----------------------------------------------*/
+/*Login Page*/
+
+.form_container{
+  padding-top: 100px;
+}  
+button {   
+  background-color: rgb(10, 98, 187);   
+  width: 100%;  
+  color: rgb(0, 0, 0);   
+  padding: 15px;   
+  margin: 10px 0px;   
+  border: none;   
+  cursor: pointer;
+  width: auto;   
+  padding: 15px 29px;  
+  margin-left: 0px;  
+}  
+input[type=text], input[type=password] {   
+  width: 50%;   
+  margin: 20px 10px;  
+  padding: 15px 20px;   
+  display: inline-block;   
+  border: px solid rgb(0, 0, 0);   
+  box-sizing: border-box; 
+}  
+button:hover {   
+  background-color: rgba(78, 149, 255, 0.46); 
+  color: black;
+  transition: all 0.2s ease;  
+} 
+.container {   
+  padding: 70px;   
+  width: 100%;
+  background-color: #ffffff;
+}   
+/*Login Page End*/
+/*----------------------------------------------*/
+/*----------------------------------------------*/
+/*----------------------------------------------*/
+/*----------------------------------------------*/
+/*----------------------------------------------*/
+/*About Us Page*/
+
+.text1{
+  color: aliceblue;
+  font-size: 100px;
+
+}
+
+.text2{
+  color: rgb(31, 121, 199);
+  font-size: 50px;
+  
+}
+.textbox{
+  border-style: solid;
+  border-width: 10px;
+  padding: 40px;
+  color: hsl(0, 0%, 100%);
+  width: 50%;
+  font-size: 20px;
+}
+.text3{
+  color: rgb(31, 121, 199);
+  font-size: 50px;
+  word-spacing: 40px;
+  letter-spacing: 10px;
+  text-align: center;
+}
+.merit{
+  color: aliceblue;
+  width: 33.33%;
+  float: left;
+  padding: 60px;
+}
+/*Contact us Page*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+.title {
+  color: grey;
+  font-size: 18px;
+}
+button:hover, a:hover {
+  opacity: 0.7;
+}
+@media screen and (max-width: auto) {
+  .column {
+    width: 100%;
+  }
+}
+.contact1{
+  background-color: #000000;
+  clear: both;
+  display: flex;
+  width: 100%;
+}
+.card{
+  float: left;
+}
+/*Booking Page*/
+.form-box
+{
+  background: rgb(255, 255, 255);
+  width: 50%;
+  padding: 40px;
+  margin: 100px auto;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  border: 1px solid #ced4da;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 5px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  background: transparent;
+}
+.form-inline button
+{
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: #fff;
+  cursor: pointer;
+}
+.form-inline button:hover
+{
+  background-color: royalblue;
+}
+/*-------Account Page--------------*/
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.acc{
+  background: rgb(0, 0, 0);
+  width: 40%;
+  padding: 50px;
+  line-height: 40px;
+  margin: 100px auto;
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  border: 1px solid #ced4da;
+}
